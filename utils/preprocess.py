@@ -1,12 +1,15 @@
+
 import re
 import nltk
-nltk.download('stopwords')
+# nltk.download('stopwords')
 from nltk.corpus import stopwords
 
-# Ensure nltk path
-nltk.data.path.append("C:\\Users\\siddh\\nltk_data")
-
-stop_words = set(stopwords.words('english'))
+# ✅ Safe loading (no download every time)
+try:
+    stop_words = set(stopwords.words('english'))
+except:
+    nltk.download('stopwords')
+    stop_words = set(stopwords.words('english'))
 
 def clean_text(text):
     text = text.lower()

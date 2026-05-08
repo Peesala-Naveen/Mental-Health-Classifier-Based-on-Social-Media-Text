@@ -1,6 +1,62 @@
+# -----------------------------
+# Virtual Environments
+# -----------------------------
 venv/
+.venv/
+env/
+
+# -----------------------------
+# Python Cache
+# -----------------------------
 __pycache__/
 *.pyc
-*.pkl
-*.keras
-.streamlit/
+*.pyo
+*.pyd
+
+# -----------------------------
+# Jupyter Notebook Checkpoints
+# -----------------------------
+.ipynb_checkpoints/
+
+# -----------------------------
+# Streamlit
+# -----------------------------
+.streamlit/secrets.toml
+
+# -----------------------------
+# OS Files
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# VS Code
+# -----------------------------
+.vscode/
+
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
+
+# -----------------------------
+# Large ML Model Files (Optional)
+# Uncomment if models are too large
+# -----------------------------
+# *.h5
+# *.keras
+# *.pkl
+# model/
+
+# -----------------------------
+# TensorFlow / Training Files
+# -----------------------------
+checkpoints/
+logs/
+tensorboard/
+
+# -----------------------------
+# Temporary Files
+# -----------------------------
+temp/
+tmp/
